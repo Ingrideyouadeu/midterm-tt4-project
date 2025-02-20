@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Add New Product</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="global.css">
+  <link rel="stylesheet" href="add-products.css">
+</head>
+<body>
+  <nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="index.html">Midterm Shop</a>
+    </div>
+  </nav>
+  <div class="container my-5">
+    <h1 class="mb-4">Add New Product</h1>
+    <form>
+      <div class="mb-3">
+        <label for="productPhoto" class="form-label">Photo</label>
+        <input type="file" class="form-control" id="productPhoto" accept="image/*">
+      </div>
+      <div class="mb-3">
+        <label for="productTitle" class="form-label">Title</label>
+        <input type="text" class="form-control" id="productTitle" placeholder="Enter product title">
+      </div>
+      <div class="mb-3">
+        <label for="productDescription" class="form-label">Description</label>
+        <textarea class="form-control" id="productDescription" maxlength="100" rows="3" placeholder="Enter a short description (limited to 100 characters)"></textarea>
+      </div>
+      <div class="row mb-3">
+        <div class="col">
+          <label for="productPrice" class="form-label">Price</label>
+          <input type="number" class="form-control" id="productPrice" placeholder="Enter price" step="0.01">
+        </div>
+        <div class="col">
+          <label for="productQuantity" class="form-label">Quantity</label>
+          <input type="number" class="form-control" id="productQuantity" placeholder="Enter quantity">
+        </div>
+      </div>
+      <button type="submit" class="btn btn-primary">Save Product</button>
+    </form>
+  </div>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="add-products.js"></script>
+</body>
+</html>
