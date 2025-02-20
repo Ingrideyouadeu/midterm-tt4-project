@@ -1,4 +1,5 @@
 import './index.scss';
+import './list-products.scss';
 
 // images
 import enginakyurt from "./assets/images/pexels-enginakyurt-4458519.jpg";
